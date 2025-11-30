@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Address Validation Page</title>
+		
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+			
+			form {
+				padding-left: 430px;
+				padding-top: 70px;
+				font-size: 22px;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<h1 style="text-align: center;">Enter your required details :-</h1>
+		
+		<form action="a22.php" method="post">
+			<label for="name"> Your Name : </label>
+			<input type="text" name="name" id="name" placeholder="Enter your Name" required>
+			<br><br>
+			<label for="streetno"> Enter Street No. : </label>
+			<input type="text" name="streetno" id="streetno" placeholder="Enter Street Number">
+			<br><br>
+			<label for="streetname"> Enter Street Name : </label>
+			<input type="text" name="streetname" id="streetname" placeholder="Enter Street Name" required>
+			<br><br>
+			<label for="city">Enter City : </label>
+			<input type="text" name="city" id="city" placeholder="Enter City Name" required>
+			<br><br>
+			<label for="state">Enter State : </label>
+			<input type="text" name="state" id="state" placeholder="Enter State Name" required>
+			<br><br>
+			<label for="pin">Enter PIN Code : </label>
+			<input type="text" name="pin" id="pin" placeholder="e.g. xxx-xxx" required>
+			<br><br>
+			<input type="reset" value="Reset">
+			<input type="submit" value="Submit here">
+		</form>
+	</body>
+</html>

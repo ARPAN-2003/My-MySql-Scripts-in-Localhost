@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>User's Choice Form</title>
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+			h2 {
+				padding-left: 40px;
+			}
+			div {
+				padding-top: 10px;
+				font-size: 22px;
+				padding-left: 160px;
+			}
+			form {
+				padding-top: 50px;
+				font-size: 16px;
+				padding-left: 40px;
+			}
+			select, input {
+				font-size: 20px;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div>
+			<h2><u>Enter the choice to display Employee Record</u> :~</h2>
+			<form action="p9 (Display Employee Table in a given Order).php" method="post">
+				<br><br><br>
+				<select name="choice">
+					<option value="" selected>---Please Select an Option to display Employee Record in order---</option>
+					<option value="EMPNAME">Employee Name</option>
+					<option value="ADDRESS">Employee Address</option>
+					<option value="PHONE_NUMBER">Contact No</option>
+					<option value="SALARY">Salary</option>
+					<option value="CATEGORY">Category</option>
+					<option value="LANGUAGES">Languages</option>
+				</select>
+				&nbsp;
+				<input type="submit" name="submit" value="Display Records">&nbsp;
+				<input type="reset" value="Reset">
+			</form>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>User's Choice Form</title>
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+			div {
+				padding-top: 10px;
+				font-size: 22px;
+				padding-left: 100px;
+			}
+			form {
+				padding-top: 50px;
+				font-size: 16px;
+				padding-left: 80px;
+			}
+			select, input {
+				font-size: 16px;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div>
+			<h2><u>Enter the choice to display Highest Run Scorer Record</u> :~</h2>
+			<form action="p5 (Display Highest Run Scorer Record).php" method="post">
+				<br><br><br>
+				<select name="choice">
+					<option value="" selected>---Please Select an Option to display Highest Run Scorer Record---</option>
+					<option value="TEST_RUNS">Display Highest Record by Test Runs</option>
+					<option value="ODI_RUNS">Display Highest Record by ODI Runs</option>
+					<option value="T20I_RUNS">Display Highest Record by T20I Runs</option>
+				</select>
+				&nbsp;
+				<input type="submit" name="submit" value="Display Record">&nbsp;
+				<input type="reset" value="Reset">
+			</form>
+		</div>
+	</body>
+</html>

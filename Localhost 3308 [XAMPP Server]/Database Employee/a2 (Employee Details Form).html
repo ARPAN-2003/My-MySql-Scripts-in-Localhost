@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Employee Details Form</title>
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+			h2 {
+				padding-left: 140px;
+			}
+			div {
+				padding-top: 10px;
+				font-size: 20px;
+				padding-left: 150px;
+			}
+			form {
+				padding-top: 50px;
+				font-size: 16px;
+				padding-left: 140px;
+			}
+			input {
+				padding: 5px;
+				font-size: 18px;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div>
+			<h2><u>Enter the Details about Employee</u> :~</h2>
+			<form action="p7 (Data Insertion within Employee Table by using Form).php" method="post">
+				<label for="name">Enter the Employee name : </label>
+				<input type="text" name="name" id="name" required/>&nbsp;
+				<br><br>
+				<label for="address">Enter the Address : </label>
+				<textarea rows="2" cols="40" name="address" id="address"></textarea> &nbsp;
+				<br><br>
+				<label for="phone">Enter the phone number : </label>
+				<input type="text" name="phone" id="phone" required/> &nbsp;
+				<br><br>
+				<label for="salary">Enter the Salary : </label>
+				<input type="text" name="salary" id="salary" required/> &nbsp;
+				<br><br>
+				<label for="category">Select Category : </label>
+				<input type="radio" name="category" id="category" value="GENERAL" /> GENERAL &nbsp;
+				<input type="radio" name="category" id="category" value="SC" /> SC &nbsp;
+				<input type="radio" name="category" id="category" value="ST" /> ST &nbsp;
+				<input type="radio" name="category" id="category" value="OBC-A" /> OBC-A &nbsp;
+				<input type="radio" name="category" id="category" value="OBC-B" /> OBC-B &nbsp;
+				<br><br>
+				<label for="language">Select Language(s) : </label>
+				<input type="checkbox" name="language[]" id="Bengali" value="Bengali" /> Bengali &nbsp;
+				<input type="checkbox" name="language[]" id="English" value="English" /> English &nbsp;
+				<input type="checkbox" name="language[]" id="Hindi" value="Hindi" /> Hindi &nbsp;
+				<input type="checkbox" name="language[]" id="Tamil" value="Tamil/Telugu" /> Tamil/Telugu &nbsp;
+				<input type="checkbox" name="language[]" id="Odiya" value="Odiya" /> Odiya &nbsp;
+				<br><br><br>
+				<input type="submit" name="submit" value="Submit Details">&nbsp;&nbsp;
+				<input type="reset" value="Reset">
+			</form>
+		</div>
+	</body>
+</html>

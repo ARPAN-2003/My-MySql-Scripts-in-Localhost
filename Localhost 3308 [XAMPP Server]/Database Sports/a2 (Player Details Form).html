@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Player Details Form</title>
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+			h2 {
+				padding-left: 120px;
+			}
+			div {
+				padding-top: 10px;
+				font-size: 22px;
+				padding-left: 200px;
+			}
+			form {
+				padding-top: 60px;
+				font-size: 20px;
+				padding-left: 120px;
+			}
+			input {
+				padding: 2px;
+				font-size: 16px;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div>
+			<h2><u>Enter Player Details</u> :~</h2>
+			<form action="p6 (Data Insertion & Table Updation by Form).php" method="post">
+				<label for="name">Enter the Player name : </label>
+				<input type="text" name="name" id="name" required/>&nbsp;
+				<br><br>
+				<label for="test">Enter Test Runs : </label>
+				<input type="number" name="test" id="test" required/> &nbsp;
+				<br><br>
+				<label for="odi">Enter ODI Runs : </label>
+				<input type="number" name="odi" id="odi" required/> &nbsp;
+				<br><br>
+				<label for="t20i">Enter T20I Runs : </label>
+				<input type="number" name="t20i" id="t20i" required/> &nbsp;
+				<br><br>
+				<input type="submit" name="insert" value="Insert Record">&nbsp;
+				<input type="submit" name="update" value="Update Record">&nbsp;
+				<input type="reset" value="Reset">
+			</form>
+		</div>
+	</body>
+</html>

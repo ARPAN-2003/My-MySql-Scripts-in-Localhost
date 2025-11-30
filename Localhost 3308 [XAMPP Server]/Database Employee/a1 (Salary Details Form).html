@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Salary Details Form</title>
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+			h2 {
+				padding-left: 120px;
+			}
+			div {
+				padding-top: 10px;
+				font-size: 22px;
+				padding-left: 200px;
+			}
+			form {
+				padding-top: 60px;
+				font-size: 20px;
+				padding-left: 120px;
+			}
+			input {
+				padding: 2px;
+				font-size: 16px;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div>
+			<h2><u>Enter Salary Details of Employee</u> :~</h2>
+			<form action="p4 (Salary Table Update).php" method="post">
+				<label for="name">Enter the Employee name : </label>
+				<input type="text" name="name" id="name" required/>&nbsp;
+				<br><br>
+				<label for="HRA">Enter the HRA percentage : </label>
+				<input type="number" name="HRA" id="HRA" required/> % &nbsp;
+				<br><br>
+				<label for="DA">Enter the DA percentage : </label>
+				<input type="number" name="DA" id="DA" required/> % &nbsp;
+				<br><br>
+				<label for="PROF_TAX">Enter the Professional Tax : </label>
+				<input type="number" name="PROF_TAX" id="PROF_TAX" required/> &nbsp;
+				<br><br>
+				<input type="submit" name="submit" value="Generate Salary">&nbsp;&nbsp;
+				<input type="reset" value="Reset">
+			</form>
+		</div>
+	</body>
+</html>

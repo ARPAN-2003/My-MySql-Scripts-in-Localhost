@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Students Marks Form</title>
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+			h2 {
+				padding-left: 120px;
+			}
+			div {
+				padding-top: 10px;
+				font-size: 22px;
+				padding-left: 200px;
+			}
+			form {
+				padding-top: 60px;
+				font-size: 20px;
+				padding-left: 120px;
+			}
+			input {
+				padding: 2px;
+				font-size: 16px;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div>
+			<h2><u>Enter Student Details & His/Her Marks</u> :~</h2>
+			<form action="p2 (Data Insertion within Marks Table by using Form).php" method="post">
+				<label for="roll">Enter the Student Roll No : </label>
+				<input type="text" name="roll" id="roll" required/>&nbsp;
+				<br><br>
+				<label for="name">Enter the Student name : </label>
+				<input type="text" name="name" id="name" required/>&nbsp;
+				<br><br>
+				<label for="math">Enter his/her Math Marks : </label>
+				<input type="number" name="math" id="math" required/> &nbsp;
+				<br><br>
+				<label for="physics">Enter his/her Physics Marks : </label>
+				<input type="number" name="physics" id="physics" required/> &nbsp;
+				<br><br>
+				<label for="computer_science">Enter his/her Computer Science Marks : </label>
+				<input type="number" name="computer_science" id="computer_science" required/> &nbsp;
+				<br><br>
+				<input type="submit" name="submit" value="Insert Record">&nbsp;&nbsp;
+				<input type="reset" value="Reset">
+			</form>
+		</div>
+	</body>
+</html>
