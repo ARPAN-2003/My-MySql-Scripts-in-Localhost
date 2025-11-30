@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Employee Registration Form</title>
+		
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+			h1 {
+				text-align: center;
+			}
+			form .container {
+				background-color: white;
+				position: relative;
+				border-radius: 5px;
+				margin: 20px 350px;
+				padding-bottom: 40px;
+				padding-top: 2px;
+			}
+			form .container .button {
+				padding-left: 230px;
+			}
+		</style>
+	</head>
+	
+	<body style="background-color: skyblue">
+		<form action="a15.php" method="get">
+			<div class="container">
+				<h1>Employee Registration Form</h1>
+				<br>
+				<div style="padding-left: 90px">Full Name : <input type="text" name="FName" placeholder="First Name" required> &nbsp <input type="text" name="LName" placeholder="Last Name" required></div>
+				<br>
+				<div style="padding-left: 90px">Gender : <input type="radio" name="Gender" required>Male <input type="radio" name="Gender" required>Female <input type="radio" name="Gender" required>Transgender</div>
+				<br>
+				<div style="padding-left: 90px">Email Address : <input type="email" name="Email" placeholder="example@example.com" required></div>
+				<br>
+				<div style="padding-left: 90px">Date Of Birth : <input type="date" name="Date Of Birth" placeholder="Enter as dd/mm/yyyy" required></div>
+				<br>
+				<div style="padding-left: 90px">Address : <textarea name="Address" placeholder="Enter your Address" cols="30" rows="1" required></textarea></div>
+				<br>
+				<div style="padding-left: 90px">Phone Number : <input type="number" name="Mobile Number" placeholder="Enter your Mobile Number" required></div>
+				<br>
+				<div style="padding-left: 90px">City : 
+					<select name="city" id="city" required>
+						<option value="">--Select your city--</option>
+						<option value="Kolkata">Kolkata</option>
+						<option value="Asansol">Asansol</option>
+						<option value="Siliguri">Siliguri</option>
+						<option value="Durgapur">Durgapur</option>
+						<option value="Bardhaman">Bardhaman</option>
+						<option value="Malda">Malda</option>
+						<option value="Baharampur">Baharampur</option>
+						<option value="Kharagpur">Kharagpur</option>
+						<option value="Dankuni">Dankuni</option>
+						<option value="Jalpaiguri">Jalpaiguri</option>
+						<option value="Darjeeling">Darjeeling</option>
+						<option value="Alipurduar">Alipurduar</option>
+						<option value="Cooch Behar">Cooch Behar</option>
+					</select>
+				</div>
+				<br>
+				<div style="padding-left: 90px">State :
+					<select name="state" id="state" required>
+						<option value="">--Select your state--</option>
+						<option value="Andhra Pradesh">Andhra Pradesh</option>
+						<option value="Arunachal Pradesh">Arunachal Pradesh</option>
+						<option value="Goa">Goa</option>
+						<option value="Gujarat">Gujarat</option>
+						<option value="Himachal Pradesh">Himachal Pradesh</option>
+						<option value="Maharastra">Maharastra</option>
+						<option value="Odisha">Odisha</option>
+						<option value="Sikkim">Sikkim</option>
+						<option value="Rajasthan">Rajasthan</option>
+						<option value="Tamil Nadu">Tamil Nadu</option>
+						<option value="Telangana">Telangana</option>
+						<option value="Uttar Pradesh">Uttar Pradesh</option>
+						<option value="West Bengal">West Bengal</option>
+					</select>
+				</div>
+				<br>
+				<div style="padding-left: 90px">Postal/ZIP Code : <input type="number" name="Zip code" placeholder="Enter Zip code"></div>
+				<br>
+				<div style="padding-left: 90px">Type of Work : <input type="checkbox" name="Occupation Type">Temporary &nbsp <input type="checkbox" name="Occupation Type">Permanent</div>
+				<br>
+				<div style="padding-left: 60px">Any Additional Message : <textarea name="Additional Message" placeholder="Optional" cols="40" rows="1"></textarea></div>
+				<br>
+				<div class="button"><input type="submit" value="Submit"></div>
+			</div>
+			
+			
+		</form>
+	</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>User Details Form</title>
+		
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+			
+			form {
+				padding-left: 400px;
+				padding-top: 70px;
+				font-size: 22px;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<h1 style="text-align: center;">Enter User Details :-</h1>
+		
+		<form action="a21.php" method="get">
+			<font color=blue>Hey user, ARPAN MITRA</font>
+			<br><br>
+			<label for="roll"> Enter your University Roll Number : </label>
+			<input type="text" name="roll" id="roll" placeholder="e.g. 2023-xxxx-xx-xxxx" required>
+			<br><br>
+			<label for="regno"> Enter your University Registration Number : </label>
+			<input type="text" name="regno" id="regno" placeholder="e.g. CU-2023-xxxx-xx" required>
+			<br><br>
+			<label for="semester"> Enter your current semester : </label>
+			<select name="semester" id="semester" required>
+				<option value="">--Select the Semester--</option>
+				<option value="Semester - I">Semester - I</option>
+				<option value="Semester - II">Semester - II</option>
+				<option value="Semester - III">Semester - III</option>
+				<option value="Semester - IV">Semester - IV</option>
+				<option value="Semester - V">Semester - V</option>
+				<option value="Semester - VI">Semester - VI</option>
+			</select>
+			<br><br>
+			<label for="session"> Enter your Academic Session : </label>
+			<select name="session" id="session" required>
+				<option value="">--Select a Session--</option>
+				<option value="Session : 2021 - 22">Session : 2021-22</option>
+				<option value="Session : 2022 - 23">Session : 2022-23</option>
+				<option value="Session : 2023 - 24">Session : 2023-24</option>
+				<option value="Session : 2024 - 25">Session : 2024-25</option>
+				<option value="Session : 2025 - 26">Session : 2025-26</option>
+			</select>
+			<br><br>
+			<input type="reset" value="Reset">
+			<input type="submit" value="Submit Form">
+		</form>
+	</body>
+</html>

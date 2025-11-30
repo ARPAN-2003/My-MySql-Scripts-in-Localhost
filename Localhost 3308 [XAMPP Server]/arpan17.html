@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Name Validation Page</title>
+		
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+			
+			form {
+				padding-left: 430px;
+				padding-top: 70px;
+				font-size: 22px;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<h1 style="text-align: center;">Enter your required details :-</h1>
+		
+		<form action="a17.php" method="post">
+			<label for="fname"> First Name : </label>
+			<input type="text" name="fname" id="fname" placeholder="Enter your First Name" required>
+			<br><br>
+			<label for="mname"> Middle Name : </label>
+			<input type="text" name="mname" id="mname" placeholder="Enter Middle Name(if any)">
+			<br><br>
+			<label for="lname"> Last Name : </label>
+			<input type="text" name="lname" id="lname" placeholder="Enter your Last Name" required>
+			<br><br>
+			<label for="dob">Enter your Date of Birth : </label>
+			<input type="date" name="dob" id="dob">
+			<br><br>
+			<label for="email">Enter your email id : </label>
+			<input type="email" name="email" id="email" required>
+			<br><br>
+			<label for="country">Enter your Country : </label>
+			<input type="text" name="country" id="country" required>
+			<br><br>
+			<input type="reset" value="Reset">
+			<input type="submit" value="Submit here">
+		</form>
+	</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Removing digits and spaces from text</title>
+		
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+			
+			form {
+				padding-left: 430px;
+				padding-top: 70px;
+				font-size: 22px;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<h1 style="text-align: center;">Enter Some Details :-</h1>
+		
+		<form action="a18.php" method="get">
+			<label for="name"> Your Name : </label>
+			<input type="text" name="name" id="name" placeholder="Enter your Name" required>
+			<br><br>
+			<label for="password"> Enter your password : </label>
+			<input type="password" name="password" id="password" placeholder="Enter your Password" required>
+			<br><br>
+			<label for="text"> Enter some text : </label>
+			<textarea name="text" placeholder="Enter text (including digits and spaces)" cols="45" rows="2" required></textarea>
+			<br><br>
+			<input type="reset" value="Reset">
+			<input type="submit" value="Submit here">
+		</form>
+	</body>
+</html>
